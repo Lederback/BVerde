@@ -1,7 +1,9 @@
+/* eslint-disable prettier/prettier */
 import { Document } from 'mongoose';
 
 export class User extends Document {
-    name: String;
-    email: String;
-    cpf: String;
+    name: string;
+    email: string;
+    cpf: string;
+    password: string;
 }
