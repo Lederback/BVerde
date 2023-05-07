@@ -1,6 +1,8 @@
+/* eslint-disable prettier/prettier */
 import { Body, Controller, Get, Post } from '@nestjs/common';
 import { UserService } from './user.service';
 import { User } from './user';
+import { LoginDto } from './dtos/userReq.dto';
 
 @Controller('user')
 export class UserController {
@@ -8,14 +10,23 @@ export class UserController {
         private readonly userService: UserService,
     ) {}
 
-    @Get()
-    async getAllUsers() {
-        return this.userService.getAll();
-        // return process.env.MONGODB_URI;
-    }
-
-    @Post()
+   /* 
+        @dev endpoint to create a new user / send to user service
+        @param user: object representing the user to be created
+        @return the created user / error
+    */
+    @Post('create')
     async createUser(@Body() user: User){
         return this.userService.createUser(user);
+    }
+
+    /* 
+        @dev endpoint to check if the user login is valid / send to user service
+        @param login: data transfer object representing the user login information
+        @return the user's id / error
+    */
+    @Get('login')
+    async userLogin(@Body() login: LoginDto) {
+        return this.userService.userLogin(login);
     }
 }
