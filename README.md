@@ -59,26 +59,30 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 ## <b>💰 Análise Financeira</b>
 A análise financeira da plataforma BVerde é essencial para avaliar sua viabilidade e retorno sobre o investimento. Vamos considerar alguns aspectos importantes:
 <br><br><b>Custo da plataforma:</b>
-
 ```
-A plataforma é composto pela instância EC2 para o backend, com um custo médio de R$ 6.000,00 por mês, e o front-end hospedado na Vercel, sem custos adicionais. A parte do smart contract é provida pela Hathor sem custo adicional.
+A plataforma é composto pela instância EC2 para o backend, com um custo médio de R$ 6.000,00 por mês,
+e o front-end hospedado na Vercel, sem custos adicionais. A parte do smart contract é provida pela Hathor sem custo adicional.
 ```
-
 <b>Desenvolvimento da plataforma:</b>
 ```
-Para desenvolver e manter a plataforma, seria necessário contratar uma equipe de seis programadores pleno, com um salário médio de R$ 5.500,00 por mês cada.
+Para desenvolver e manter a plataforma, seria necessário contratar
+uma equipe de seis programadores pleno, com um salário médio de R$ 5.500,00 por mês cada.
 ```
-
 <b>Tokenização dos créditos de carbono:</b>
 ```
-O custo da tokenização depende da quantidade de tokens necessários para representar os créditos de carbono. Como exemplo, consideramos que 1000 hectares de floresta amazônica podem evitar a emissão de 54.000 créditos de carbono por ano. Portanto, o custo de tokenização para essa quantidade de créditos seria de R$ 18.360,00.
+O custo da tokenização depende da quantidade de tokens necessários para representar os créditos de carbono.
+Como exemplo, consideramos que 1000 hectares de floresta amazônica podem evitar a emissão de 54.000
+créditos de carbono por ano.
+Portanto, o custo de tokenização para essa quantidade de créditos seria de R$ 18.360,00.
 ```
-
 <b>Taxa de transação:</b>
 ```
-Cada transferência realizada nos tokens na bolsa verde captura uma taxa de 0,14 centavos. Considerando todas as transações realizadas, estimamos que a plataforma geraria um total de R$ 7.560,00.
+Cada transferência realizada nos tokens na bolsa verde captura uma taxa de 0,14 centavos.
+Considerando todas as transações realizadas, estimamos que a plataforma geraria um total de R$ 7.560,00.
 ```
-Para que a plataforma se pague em um período de <b>seis meses</b>, considerando apenas a receita gerada pelas transações na bolsa verde, seria necessário ter pelo menos 13 clientes com um volume de créditos de carbono equivalente ao exemplo mencionado.
+Para que a plataforma se pague em um período de <b>seis meses</b>, considerando apenas a receita gerada
+pelas transações na bolsa verde, seria necessário ter pelo menos 13 clientes com um volume de créditos
+de carbono equivalente ao exemplo mencionado.
 ## 🪙 Token
 
 Para consultar as informações do token construído com a plataforma hathor, acesse:
