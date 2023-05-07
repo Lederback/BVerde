@@ -84,6 +84,7 @@ npm run start:dev
 
 | Parâmetro   | Tipo       | Descrição                           |
 | :---------- | :--------- | :---------------------------------- |
+| `userEmail` | `string` | **Obrigatório** |
 | `tokenName` | `string` | **Obrigatório** |
 | `tokenSymbol` | `string` | **Obrigatório** |
 | `tokenAmount` | `number` | **Obrigatório** |
