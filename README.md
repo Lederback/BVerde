@@ -73,6 +73,13 @@ Podendo acessá-la de forma rápida clicando no link abaixo:<br>
 - <a href="https://github.com/Lederback/BVerde/tree/main/frontend">Frontend</a><br>
 - <a href="https://github.com/Lederback/BVerde/tree/main/Backend">Backend</a>
 
+## 👨‍💻Tecnologias utilizadas
+- <a href="https://nestjs.com/">Nest.JS</a><br>
+- <a href="https://nextjs.org/">Next.JS</a><br>
+- <a href="https://www.mongodb.com/">MongoDB</a><br>
+- <a href="https://hathor.network/">Hathor</a><br>
+
+
 ## 🎓 Referências
 - https://sistemas.icmbio.gov.br/simrppn/publico/
 - Centro de Monitoramento da Conservação Mundial, ONU
