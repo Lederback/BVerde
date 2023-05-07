@@ -1,7 +1,9 @@
-//import '../components/login/mainblock'
+import MainBlock from '../components/login/mainblock'
+
 export default function LandingPage() {
   return (
-    //<MainBlock />
-    <div></div>
+    <div>
+      <MainBlock />
+    </div>
   )
 }
