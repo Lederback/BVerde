@@ -40,7 +40,7 @@ export class UserService {
         }
     }
 
-    async createUserToken(userEmail: String, token: TokenReqDto) {
+    async createUserToken(userEmail: string, token: TokenReqDto) {
         try {
             const hathorResponse = await this.hathorService.createToken(token.tokenName, token.tokenSymbol, token.tokenAmount);
 
@@ -54,7 +54,7 @@ export class UserService {
         }
     }
 
-    async getUserByMail(userEmail: String) {
+    async getUserByMail(userEmail: string) {
         try {
             return await this.userModel.findOne({ email: userEmail }).exec();
         }
@@ -74,7 +74,7 @@ export class UserService {
             if (!user) {
                 return "not Valid";
             }
-            const id = {id: (await user)._id};
+            const id = (await user)._id;
             const isValidPassword = await bcrypt.compare(login.password, (await user).password);
 
             if (!isValidPassword) {

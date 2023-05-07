@@ -1,6 +1,8 @@
 import styles from './forms.module.css'
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
+import axios from 'axios';
+import { headers } from 'next/dist/client/components/headers';
 
 export default function Forms(){
     const router = useRouter();
@@ -12,10 +14,22 @@ export default function Forms(){
     const [notEmail, setNotEmail] = useState(true);
     const [notPassword, setNotPassword] = useState(true);
 
-    const handleSubmit = (event) =>{
+    const handleSubmit = async (event) =>{
         event.preventDefault();
         if (email && password) {
-            router.push('/about')
+            const response = await axios.post('http://localhost:4000/user/login', {
+                email: email,
+                password: password
+            }, { headers: {
+                'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin': '*'
+            }})
+            if (typeof(response.data) === 'string') {
+                router.push('/about')
+            }
+            else {
+                alert('Email ou senha incorretos')
+            }
         }
     }
 

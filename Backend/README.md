@@ -33,7 +33,7 @@ HATHOR_WALLET_ID=
 npm run start:dev
 ```
 
-5. Agora, você pode acessar a API em http://localhost:3000.
+5. Agora, você pode acessar a API em http://localhost:4000.
 
 ## Rotas
 ### Solciita a verificação o login do usuário
