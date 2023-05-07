@@ -8,6 +8,6 @@ export const UserSchema = new mongoose.Schema({
     cpf: String,
     rg: String,
     address: String,
-    cpr: String,
     password: String,
+    walletAddress: String
 })
