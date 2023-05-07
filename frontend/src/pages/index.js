@@ -1,5 +1,6 @@
-export default function Home() {
+import '../components/login/mainblock'
+export default function LandingPage() {
   return (
-    <h1>Oi</h1>
+    <MainBlock />
   )
 }
