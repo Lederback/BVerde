@@ -22,13 +22,13 @@ Com a conversão dos créditos de carbono em tokens, a plataforma torna mais ace
 |--> frontend<br>
 Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
-- <b>Backend</b>: 
+- <b>Backend</b>: Pasta contendo os arquivos relacionados à parte do backend do projeto.
 
-- <b>frontend</b>: 
+- <b>frontend</b>: Pasta contendo os arquivos relacionados à parte do frontend do projeto.
 
-- <b>README.md</b>: arquivo que serve como guia e explicação geral sobre o projeto (o mesmo que você está lendo agora).
+- <b>README.md</b>: arquivo que serve como guia e explicação geral sobre o projeto.
 
-## <b>Nosso value proposition canvas</b>
+## 💼 <b>Nosso value proposition canvas</b>
 
 ### <b>Tarefas do Cliente:</b>
 - Proteger áreas de preservação ambiental
@@ -59,6 +59,21 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 Para consultar as informações do token construído com a plataforma hathor, acesse:
 <a href="https://github.com/Lederback/BVerde/tree/main/Backend">Token</a> 
 
+## Vídeo Demonstrativo:
+Abaixo é possível encontrar o link para o vídeo de demonstração da plataforma BVerde: <a href="">Link do vídeo de demonstração </a>
+
+Neste vídeo, apresentamos as principais funcionalidades e características da plataforma, além de mostrar como os agricultores podem se cadastrar e tokenizar seus créditos de carbono.
+
+Assista ao vídeo para ter uma visão mais detalhada da solução e entender como ela pode beneficiar tanto os agricultores quanto as empresas interessadas em adquirir créditos de carbono.
+<br><br>
+
+## ❗️Instruções de Execução
+1. As instruções de cada parte de execução está dentro das suas respectivas pastas.
+Podendo acessá-la de forma rápida clicando no link abaixo:<br>
+- <a href="https://github.com/Lederback/BVerde/tree/main/frontend">Frontend</a><br>
+- <a href="https://github.com/Lederback/BVerde/tree/main/Backend">Backend</a>
+
 ## 🎓 Referências
 - https://sistemas.icmbio.gov.br/simrppn/publico/
 - Centro de Monitoramento da Conservação Mundial, ONU
+
