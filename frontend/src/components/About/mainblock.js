@@ -1,5 +1,9 @@
 import styles from '../About/mainblock.module.css'
+import { useRouter } from 'next/navigation';
+
 export default function About(){
+    const router = useRouter();
+
     return(
         <div className={styles.main}>
             <div className={styles.top}>
@@ -13,7 +17,7 @@ export default function About(){
                     <p style={{marginTop: '20px'}}>Com a conversão dos créditos de carbono em tokens, a plataforma torna mais acessível e fácil o engajamento de diversos participantes no mercado de carbono, impulsionando a transição para uma economia mais sustentável e de baixa emissão de carbono.</p>
                     <p className={styles.add}>Não vai perder essa chance, né?</p>
                 </div>
-                <button className={styles.button}>Entrar</button>
+                <button className={styles.button} onClick={() => router.push('/home')}>Entrar</button>
             </div>
         </div>
     )
