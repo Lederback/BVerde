@@ -1,8 +1,21 @@
 import { toast } from "react-hot-toast";
+import axios from "axios";
 
 import styles from "./Card.module.scss";
 
 const Card = (props) => {
+  const createToken = async (tokenName, tokenSymbol, tokenAmount) => {
+    const response = await axios.post('http://localhost:4000/user/createToken', {
+      tokenName: tokenName,
+      tokenSymbol: tokenSymbol,
+      tokenAmount: tokenAmount,
+      }, { headers: {
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*'
+    }})
+    return response
+  }
+
   const clickHandler = (actions) =>  {
     if (actions === "register") {
       return () => toast.success(props.toast)
@@ -11,7 +24,12 @@ const Card = (props) => {
       return () => toast.success(props.toast)
     }
     if (actions === "token") {
-      return () => toast.success(props.toast)
+      const response = createToken("Teste", "TST", "100");
+      if (response.status === 200) {
+        return () => toast.success(props.toast)
+      } else {
+        return () => toast.error("Erro ao criar token")
+      }
     }
   }
 
