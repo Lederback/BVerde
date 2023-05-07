@@ -57,9 +57,8 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 ## 🪙 Token
 
 Para consultar as informações do token construído com a plataforma hathor, acesse:
-```
-![link para o backend](https://github.com/Lederback/BVerde/tree/main/Backend)
-```
+<a href="https://github.com/Lederback/BVerde/tree/main/Backend">Token</a> 
+
 ## 🎓 Referências
 - https://sistemas.icmbio.gov.br/simrppn/publico/
 - Centro de Monitoramento da Conservação Mundial, ONU
