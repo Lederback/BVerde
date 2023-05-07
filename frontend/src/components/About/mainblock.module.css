@@ -1,0 +1,70 @@
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.top{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.icon {
+    width: 120px;
+    height: 120px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.name{
+    font-size: 60px;
+    margin-top: 25px;
+}
+
+.title{
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+.text{
+    width: 50%;
+    height: 100%;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.add{
+    margin-top: 30px;
+    font-size: 28px;
+    font-weight: 550;
+}
+
+.button{
+    width: 300px;
+    height: 90px;
+    font-size: 40px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    background-color: #00CC66;
+    margin-top: 20px;
+}
+
+.button:hover{
+    background-color: #108C58;
+    cursor: pointer;
+}
