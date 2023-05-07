@@ -25,6 +25,18 @@
   }
 }
 
+#certificate_input {
+  width: fit-content;
+  padding-left: 1px;
+  border-radius: 5px;
+  border: none;
+  background-color: #e7e4e4;
+}
+
+#card_logo {
+  height: 4rem;
+}
+
 .actions {
   height: 100%;
   display: flex;
