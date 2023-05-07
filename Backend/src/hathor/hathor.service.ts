@@ -14,7 +14,7 @@ export class HathorService {
 
         const response = await axios.get(`${process.env.HATHOR_URI}/wallet/address?mark_as_used=true`, { headers });
 
-        return response.data;
+        return response.data.address;
     }
 
     async createToken (name: String, symbol: String, amount: Number) {

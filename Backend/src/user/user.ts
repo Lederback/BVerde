@@ -2,8 +2,11 @@
 import { Document } from 'mongoose';
 
 export class User extends Document {
-    name: string;
-    email: string;
-    cpf: string;
-    password: string;
+    name: String;
+    email: String;
+    cpf: String;
+    rg: String;
+    address: String;
+    password: String;
+    walletAddress: String;
 }

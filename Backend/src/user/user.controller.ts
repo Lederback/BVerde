@@ -25,6 +25,7 @@ export class UserController {
     async createUserToken(@Body() token: TokenReqDto) {
         return this.userService.createUserToken("renato.machado@sou.inteli.edu.br", token);
     }
+    
     /* 
         @dev endpoint to check if the user login is valid / send to user service
         @param login: data transfer object representing the user login information
