@@ -25,12 +25,17 @@ export class UserController {
     async createUserToken(@Body() token: TokenReqDto) {
         return this.userService.createUserToken(token);
     }
+
+    @Get('getUserByMail')
+    async getUserByMail() {
+        return this.userService.getUserByMail("renato.machado@sou.inteli.edu.br");
+    }
     /* 
         @dev endpoint to check if the user login is valid / send to user service
         @param login: data transfer object representing the user login information
         @return the user's id / error
     */
-    @Get('login')
+    @Post('login')
     async userLogin(@Body() login: LoginDto) {
         return this.userService.userLogin(login);
     }
