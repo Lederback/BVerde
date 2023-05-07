@@ -16,16 +16,15 @@ export class UserController {
         @param user: object representing the user to be created
         @return the created user / error
     */
-    @Post()
+    @Post('create')
     async createUser(@Body() user: User){
         return this.userService.createUser(user);
     }
 
     @Post("createToken")
     async createUserToken(@Body() token: TokenReqDto) {
-        return this.userService.createUserToken("renato.machado@sou.inteli.edu.br", token);
+        return this.userService.createUserToken(token);
     }
-    
     /* 
         @dev endpoint to check if the user login is valid / send to user service
         @param login: data transfer object representing the user login information

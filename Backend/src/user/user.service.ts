@@ -40,7 +40,7 @@ export class UserService {
         }
     }
 
-    async createUserToken(userEmail: String, token: TokenReqDto) {
+    async createUserToken(token: TokenReqDto) {
         try {
             const hathorResponse = await this.hathorService.createToken(token.tokenName, token.tokenSymbol, token.tokenAmount);
 
