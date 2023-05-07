@@ -28,8 +28,12 @@ export class UserService {
             user.walletAddress = userToken;
 
             const newUser = new this.userModel({ ...user, password: hashedPassword });
+            await newUser.save();
             
-            return await newUser.save();
+            return {
+                status: 200,
+                message: "User created succesfully"
+            } 
         }
         catch (error) {
             return error;
@@ -41,7 +45,8 @@ export class UserService {
             const hathorResponse = await this.hathorService.createToken(token.tokenName, token.tokenSymbol, token.tokenAmount);
 
             return {
-                status: 200
+                status: 200,
+                message: "Token created"
             };
         }
         catch (error) {

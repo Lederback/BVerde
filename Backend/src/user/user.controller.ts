@@ -16,7 +16,7 @@ export class UserController {
         @param user: object representing the user to be created
         @return the created user / error
     */
-    @Post('create')
+    @Post()
     async createUser(@Body() user: User){
         return this.userService.createUser(user);
     }
