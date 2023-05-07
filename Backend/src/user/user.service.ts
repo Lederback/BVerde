@@ -12,6 +12,11 @@ export class UserService {
         @InjectModel('User') private readonly userModel: Model<User>,
     ) {}
 
+    /* 
+        @dev function to create a new user
+        @param user: object representing the user to be created
+        @return the created user / error
+    */
     async createUser(user: User) {
         try {
             const hashedPassword = await bcrypt.hash(user.password, 10);
@@ -24,6 +29,11 @@ export class UserService {
         }
     }
 
+    /* 
+        @dev function to check if the user login is valid
+        @param login: data transfer object representing the user login information
+        @return the user's id / error
+    */
     async userLogin(login: LoginDto) {
         try {
             const user = this.userModel.findOne({ email: login.email }).exec();
