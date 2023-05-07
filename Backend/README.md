@@ -86,7 +86,7 @@ npm run start:dev
 | :---------- | :--------- | :---------------------------------- |
 | `tokenName` | `string` | **Obrigatório** |
 | `tokenSymbol` | `string` | **Obrigatório** |
-| `tokenAmount` | `string` | **Obrigatório** |
+| `tokenAmount` | `number` | **Obrigatório** |
 
 ##### Expected response
 ```json
